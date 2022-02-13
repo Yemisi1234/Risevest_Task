@@ -1,0 +1,97 @@
+.navlinks{
+    font-family: TomatoGrotesk,sans-serif;
+    font-weight: 500;
+    font-size: max(calc(16 * (100vw / 1920)),16px);
+    color:  #07969E;
+    text-decoration: none;
+  }
+  .nav-menu{
+    display: grid;
+    grid-template-columns: repeat(5 auto);
+    grid-gap: 15px;
+  }
+  .container_header{
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 15px;
+  } 
+  .nav-logo{
+      cursor: pointer;
+  }
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #07969E;
+  }
+  .X{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    /* -webkit-transition: all 0.3s ease-in-out; */
+    transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
+    background-color: red;
+  }
+  .hamburger{
+      display: none;
+  }
+  @media screen and (max-width: 800px){
+    .container_header{
+        position: relative;
+    }
+    .nav-menu{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 500px;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+    } 
+    .nav-menu.active{
+        background-color: #A0DDE2;
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+        margin: 0 auto;
+        text-align: center;
+        height: 100vh;
+        width: 100%;
+        padding: 30px;
+    }
+    .navlinks{
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+    .navlinks:hover{
+        border-radius: 0;
+    }
+    .nav-logo{
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(25%, 50%);
+    }
+    .hamburger{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+      
+  }
+  
+  

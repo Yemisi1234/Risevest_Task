@@ -1,0 +1,9 @@
+table{
+    width: 100%;
+}
+table td{
+    padding: 15px;
+}
+.footer_Item{
+    font-weight: bolder;
+}

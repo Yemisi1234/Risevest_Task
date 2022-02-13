@@ -1,0 +1,87 @@
+.main_container{
+    display: grid;
+    grid-template-columns: 500px 300px 300px;
+    grid-template-rows: auto;
+    margin-top: 15vh;
+    grid-gap: 10px;
+}
+.image_card{
+    filter: drop-shadow(rgba(53, 71, 89, 0.15) 0px 1.60087px 16.0087px);
+    height: 30.0375rem;
+    width: 16.0171875rem;
+}
+.header_investment{
+    font-weight: 700;
+    font-size: 3.0rem;
+    font-family: TomatoGrotesk,sans-serif;
+    line-height: 1.25;
+    color:  #07969E;
+    width: 450px;
+    max-width: 18ch;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.header_p{
+    color: #4A5050;
+    /* font-family: DM Sans; */
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 18px;
+    line-height: 24px;
+    width: 450px;
+}
+.ads{
+    width: 30%;
+    height: 50px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.ads > i{
+    margin-right: 15px;
+    margin-top: 5px;
+}
+.ads_container{
+    display: flex;
+    margin-top: 20px;
+}
+/* .wealth{
+    width: 100%;
+} */
+@media screen and (max-width: 1200px){
+    .main_container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 800px){
+    .main_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+    .Main_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        padding: 20px;
+    }
+    .header_investment{
+        display: flex;
+        width: 100%;
+    }
+    .ads{
+        width: 35%;
+        height: 55px;
+    }

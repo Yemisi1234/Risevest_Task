@@ -1,0 +1,77 @@
+.invest_section{
+    display: grid;;
+    grid-template-columns: 600px 300px;
+    grid-template-rows: auto;
+    gap: 10;
+}
+.invest_section_dollars{
+   margin-top: 20vh;
+
+}
+.invest_section_dollars > h2 {
+    font: Tomato Grotesk
+}
+.invest_section_dollars > p{
+    font-size: 16px;
+    line-height: 1.5;
+    color: #4A5050;
+    width: 60%;
+}
+.invest_section_p{
+    margin-top: 20px;
+    color: #07969E;
+    font-weight: 500;
+    padding-right: 10px;
+}
+.invest_section_platform > p{
+    font-size: 16px;
+    line-height: 1.5;
+    color: #4A5050;
+    width: 140%;
+}
+.invest_section_p > svg{
+    margin-top: -20vh;
+}
+.invest_section_goals > p{
+    font-size: 16px;
+    line-height: 1.5;
+    color: #4A5050;
+    width: 75%;
+}
+.invest_section_goals > svg{
+   margin-top: -90px;
+}
+@media screen and (max-width: 800px){
+    .invest_section{
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 50px;
+        width: 100%;
+        font-size: 18px;
+    }
+    .invest_section_dollars{
+        width: 90%;
+    }
+    .invest_section_p > svg{
+        width: 60%;
+    }
+    .invest_section_goals > svg{
+        width: 60%;
+    }
+    .invest_section_client > svg{
+        width: 60%;
+    }
+    .invest_section_platform{
+        overflow: hidden;
+        width: 50%;
+        margin-right: 90px;
+        font-size: 18px;
+    }
+    .invest_section_goals{
+        margin-top: 25px;
+        width: 70%;
+    }
+}
